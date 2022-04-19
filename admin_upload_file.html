@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Upload product</title>
+    <style>
+        body
+        {
+            background-image:url('https://media.istockphoto.com/photos/empty-light-blue-studio-room-with-light-and-shadow-abstract-picture-id1173873258?b=1&k=20&m=1173873258&s=170667a&w=0&h=xGZvbRnRj7EztZ3QOzcoiM98kKzTYfWe0X8ZYXZ4wBQ=');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;            
+        }
+        .heading
+        {
+            color: black;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 40px;
+        }
+        .container
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form
+        {
+            background-color: rgb(255, 255, 100);
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            border-radius: 10px;
+            height: 50vh;
+            margin-top: 50px;
+        }
+        .child
+        {   
+
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: solid blue 3px;
+            border-radius: 5px;
+            width: 90%;
+        }
+        .button
+        {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: green;
+            padding:4px;
+            border: solid green 5px;
+            border-radius: 5px;
+            color:wheat;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="admin_upload_product.php" method="post" enctype="multipart/form-data">
+            <h3 class="heading">Upload Product</h3>
+            <input required placeholder="Product name" autocomplete="off" name="pname" class="child">
+            <textarea name="details" placeholder="Product Details" class="child"></textarea>
+            <input type="number" placeholder="Price" required name="price" class="child">
+            <input required name="imgdata" type="file" class="child">
+            <input type="submit" class="button">
+        </form>
+    </div>
+</body>
+</html>

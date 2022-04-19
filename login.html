@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Page</title>
+    <style>
+        body
+        {
+            background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuIlFi_tVMRuaofI7Eo-CPL9ujbmRw15-o9A&usqp=CAU');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;            
+        }
+        .heading
+        {
+            color: black;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 40px;
+        }
+        .container
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form
+        {
+            background-color: blue;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            border-radius: 10px;
+            height: 50vh;
+            margin-top: 50px;
+        }
+        .child
+        {   
+
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: solid blue 3px;
+            border-radius: 5px;
+        }
+        .button
+        {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: green;
+            padding:4px;
+            border: solid green 5px;
+            border-radius: 5px;
+            color:wheat;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="validate_form.php" method="post" class="form">
+            <h1 class="heading">Admin Login</h1>
+            <input type="text" name="adname" id="first" class="child" required placeholder="Admin Name">
+            <input required autocomplete="off" placeholder="Admin Email"name="mail" class="child">
+            <input required placeholder="Password" type="password" name="adpass" class="child">
+            <input type="submit" value="Submit" class="button">
+        </form>
+    </div>
+
+</body>
+</html>
